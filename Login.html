@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login & Signup</title>
+  <link rel="stylesheet" href="Login.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="container">
+    <input type="radio" name="tab" id="login-tab" checked>
+    <input type="radio" name="tab" id="signup-tab">
+
+    <div class="tabs">
+      <label for="login-tab">Login</label>
+      <label for="signup-tab">Signup</label>
+    </div>
+
+    <div class="form-container">
+      <form action="myproject.html" class="login-form">
+        <input type="email" placeholder="Email" required>
+        <input type="password" id="pw" placeholder="Password" required>
+        <button type="submit" id="bn"></button>
+        <button type="submit">Login</button>
+      </form>
+
+      <form action="#" class="signup-form">
+		    <input type="text" placeholder="First Name" required id="un">
+		    <input type="text" placeholder="Last Name" required id="un">
+        <input type="email" placeholder="Email" required>
+		    <input type="Mobile number" placeholder="Mobile Number(Optional)" optional>
+        <input type="password" id="pw1" placeholder="Password" required>
+        <input type="password" id="pw" placeholder="Confirm Password" required>
+        <div>
+        <input type="checkbox" id="terms" onclick="btn.disabled=!terms.checked">
+        <a href="https://www.flipkart.com/pages/terms">Accept Terms & Conditions</a>
+        </div>
+        <button type="submit" id="bn1"></button>
+        <button type="submit" id="btn" disabled>Signup</button>
+        <section>
+        <div class="social-media">
+          <a href="https://github.com/naveenraja2-star"><i class='bx bxl-github'></i></a>
+          <a href=""><i class='bx bxl-microsoft'></i></a>
+          <a href=""><i class='bx bxl-google'></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100068537451422"><i class='bx bxl-facebook'></i></a>
+          <a href="https://x.com/Naveen_0611"><i class='bx bxl-twitter'></i></a>
+        </div>
+        </section>
+      </form>
+    </div>
+  </div>
+  <script src="Login.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #f0f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      width: 360px;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    .tabs {
+      display: flex;
+      cursor: pointer;
+    }
+    .tabs label {
+      flex: 1;
+      padding: 15px;
+      text-align: center;
+      background: #f0f0f0;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    #login-tab:checked ~ .tabs label[for="login-tab"],
+    #signup-tab:checked ~ .tabs label[for="signup-tab"] {
+      background: #3498db;
+      color: #fff;
+    }
+    input[type="radio"] {
+      display: none;
+    }
+    .form-container {
+      padding: 20px;
+    }
+    form {
+      display: none;
+      flex-direction: column;
+    }
+    #login-tab:checked ~ .form-container form.login-form,
+    #signup-tab:checked ~ .form-container form.signup-form {
+      display: flex;
+    }
+    form input {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+    form button {
+      padding: 10px;
+      background: #3498db;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+
+    }
+    form button:hover{
+        background-color: green;
+    }
+    #bn{
+      color: #fff;
+    }
+    section{
+      height: 80px;
+    }
+    .social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 13%;
+    height: 10%;
+    position: relative;
+    left: 30px;
+    text-decoration: none;
+    background: transparent;
+    border: .2rem solid #0ef;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #0ef;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+    }
+    .social-media a:hover{
+    background: #0ef;
+    color: #323946;
+    box-shadow: 0 0 1rem #0ef;
+    }
